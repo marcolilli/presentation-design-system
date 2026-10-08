@@ -49,3 +49,7 @@ The gallery is a static visual reference built with HTML and CSS.
 ## Typography
 
 Inter is bundled for consistent rendering, including offline use. The bundled font is licensed under the SIL Open Font License 1.1; see <code>assets/Inter-OFL.txt</code>.
+
+## Source
+
+This design system is based on and adapts the visual rules from [the original design system repository](https://github.com/v0id-byte/peg-design-system.git).
