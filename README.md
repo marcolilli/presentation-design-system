@@ -2,6 +2,8 @@
 
 A restrained, type-led visual system for building presentation slides with HTML and CSS. The project contains CSS tokens, reusable layouts and components, written design rules, and a static example gallery.
 
+![Color tokens and typography roles rendered with bundled Inter](assets/design-system-reference.png)
+
 ## Quick start
 
 Link the single public stylesheet from a slide document:
@@ -19,10 +21,6 @@ Create a 16:9 slide canvas and use the provided classes:
     </section>
 
 The canvas uses a 1920 × 1080 design reference and scales proportionally to fit its available width. CSS classes and custom properties use the <code>pds-</code> prefix.
-
-## Visual reference
-
-![Color tokens and typography roles rendered with bundled Inter](assets/design-system-reference.png)
 
 ## What's included
 
