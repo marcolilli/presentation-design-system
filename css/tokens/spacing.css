@@ -1,0 +1,23 @@
+:root {
+  --pds-canvas-width: 1920px;
+  --pds-canvas-height: 1080px;
+}
+
+.pds-slide {
+  --pds-slide-margin: 7.8125cqw;
+  --pds-footer-bottom: 3.333333cqw;
+
+  --pds-space-1: 0.208333cqw;
+  --pds-space-2: 0.416667cqw;
+  --pds-space-3: 0.625cqw;
+  --pds-space-4: 0.833333cqw;
+  --pds-space-5: 1.25cqw;
+  --pds-space-6: 1.666667cqw;
+  --pds-space-7: 2.083333cqw;
+  --pds-space-8: 2.5cqw;
+  --pds-space-9: 3.333333cqw;
+  --pds-space-10: 4.166667cqw;
+  --pds-space-11: 5cqw;
+  --pds-space-12: 6.25cqw;
+  --pds-space-13: 7.8125cqw;
+}

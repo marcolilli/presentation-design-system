@@ -1,0 +1,112 @@
+.pds-layout-title .pds-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--pds-space-6);
+}
+
+.pds-layout-title .pds-subhead {
+  max-width: 56.25cqw;
+}
+
+.pds-layout-headline .pds-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--pds-space-5);
+}
+
+.pds-layout-headline .pds-support {
+  max-width: 52.083333cqw;
+}
+
+.pds-layout-headline.pds-layout--with-figure .pds-headline {
+  max-width: 52.083333cqw;
+  font-size: 3.541667cqw;
+}
+
+.pds-layout-stats .pds-frame {
+  display: flex;
+  align-items: center;
+  gap: 7.291667cqw;
+}
+
+.pds-layout-table .pds-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--pds-space-5);
+}
+
+.pds-layout-table .pds-headline {
+  max-width: 100%;
+  font-size: 3.541667cqw;
+}
+
+.pds-layout-footnote .pds-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--pds-space-5);
+}
+
+.pds-layout-list .pds-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--pds-space-3);
+}
+
+.pds-layout-list .pds-headline {
+  max-width: 100%;
+  font-size: 3.125cqw;
+}
+
+.pds-layout-flow .pds-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pds-layout-chips .pds-frame {
+  display: flex;
+  align-items: center;
+}
+
+.pds-layout-attributes .pds-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pds-layout-moment .pds-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.pds-layout-moment .pds-headline,
+.pds-layout-moment .pds-hero {
+  max-width: 78.125cqw;
+}
+
+.pds-layout-moment .pds-headline {
+  margin-inline: auto;
+}
+
+.pds-layout-moment .pds-hero {
+  color: var(--pds-accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.pds-layout--left {
+  text-align: left;
+}
+
+.pds-layout--center {
+  text-align: center;
+}

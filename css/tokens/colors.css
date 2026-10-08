@@ -1,0 +1,23 @@
+:root {
+  --pds-color-paper: #FAFAF8;
+  --pds-color-ink: #16181D;
+  --pds-color-night: #0B0B0C;
+  --pds-color-jade: #00A878;
+  --pds-color-alert: #E5484D;
+  --pds-color-mute: #8A8A8E;
+
+  --pds-topic-control: #128A6B;
+  --pds-topic-silicon: #3A6AA0;
+  --pds-topic-material: #8C6B38;
+  --pds-topic-safety: #AC5A3C;
+  --pds-topic-algorithm: #6A57A0;
+  --pds-topic-growth: #5E9A52;
+
+  --pds-bg-default: var(--pds-color-paper);
+  --pds-bg-inverse: var(--pds-color-night);
+  --pds-fg-default: var(--pds-color-ink);
+  --pds-fg-muted: var(--pds-color-mute);
+  --pds-fg-accent: var(--pds-color-jade);
+  --pds-fg-danger: var(--pds-color-alert);
+  --pds-fg-inverse: var(--pds-color-paper);
+}

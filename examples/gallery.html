@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Presentation Design System — Static Gallery</title>
+  <link rel="stylesheet" href="../css/presentation-system.css">
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 48px 5vw 96px;
+      background: #F0F0ED;
+      color: #16181D;
+      font-family: "PDS Inter", "Helvetica Neue", Arial, sans-serif;
+    }
+    .pds-gallery { max-width: 1440px; margin: 0 auto; }
+    .pds-gallery__intro { max-width: 820px; margin: 0 0 48px; }
+    .pds-gallery__intro h1 { margin: 0 0 12px; font-size: clamp(32px, 4vw, 56px); letter-spacing: -0.04em; }
+    .pds-gallery__intro p { margin: 0; color: #5F6063; font-size: 18px; line-height: 1.5; }
+    .pds-gallery__section { margin: 48px 0 0; }
+    .pds-gallery__section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
+    .pds-gallery__section h2 { margin: 0; font-size: 22px; letter-spacing: -0.02em; }
+    .pds-gallery__section h2 a { color: inherit; text-decoration: none; }
+    .pds-gallery__section h2 a:hover { text-decoration: underline; }
+    .pds-gallery__open { flex: 0 0 auto; color: #5F6063; font-size: 14px; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .pds-gallery__section > p { margin: 0 0 16px; color: #66676A; font-size: 14px; line-height: 1.5; }
+    .pds-gallery__preview { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; background: #FAFAF8; }
+    @media (max-width: 680px) {
+      body { padding: 28px 16px 64px; }
+      .pds-gallery__section { margin-top: 36px; }
+      .pds-gallery__section-head { align-items: baseline; }
+    }
+  </style>
+</head>
+<body>
+  <main class="pds-gallery">
+    <header class="pds-gallery__intro">
+      <h1>Presentation Design System</h1>
+      <p>A static reference to the colors, type, spacing, components, and layouts in the HTML/CSS system. Open any heading or standalone link to view that example as its own HTML file.</p>
+    </header>
+
+    <section class="pds-gallery__section" aria-labelledby="colors-heading">
+      <div class="pds-gallery__section-head">
+        <h2 id="colors-heading"><a href="slides/colors.html" target="_blank" rel="noreferrer">Color tokens</a></h2>
+        <a class="pds-gallery__open" href="slides/colors.html" target="_blank" rel="noreferrer">Open standalone ↗</a>
+      </div>
+      <p>Six core colors, each with a defined role.</p>
+      <iframe class="pds-gallery__preview" src="slides/colors.html" title="Color tokens slide example" loading="lazy"></iframe>
+    </section>
+
+    <section class="pds-gallery__section" aria-labelledby="title-heading">
+      <div class="pds-gallery__section-head">
+        <h2 id="title-heading"><a href="slides/title.html" target="_blank" rel="noreferrer">Title</a></h2>
+        <a class="pds-gallery__open" href="slides/title.html" target="_blank" rel="noreferrer">Open standalone ↗</a>
+      </div>
+      <p>A quiet opening with a wordmark and supporting line.</p>
+      <iframe class="pds-gallery__preview" src="slides/title.html" title="Title slide example" loading="lazy"></iframe>
+    </section>
+
+    <section class="pds-gallery__section" aria-labelledby="headline-heading">
+      <div class="pds-gallery__section-head">
+        <h2 id="headline-heading"><a href="slides/headline.html" target="_blank" rel="noreferrer">Headline and supporting line</a></h2>
+        <a class="pds-gallery__open" href="slides/headline.html" target="_blank" rel="noreferrer">Open standalone ↗</a>
+      </div>
+      <p>One claim leads; the supporting sentence adds context.</p>
+      <iframe class="pds-gallery__preview" src="slides/headline.html" title="Headline and supporting line slide example" loading="lazy"></iframe>
+    </section>
+
+    <section class="pds-gallery__section" aria-labelledby="stats-heading">
+      <div class="pds-gallery__section-head">
+        <h2 id="stats-heading"><a href="slides/stats.html" target="_blank" rel="noreferrer">Stats</a></h2>
+        <a class="pds-gallery__open" href="slides/stats.html" target="_blank" rel="noreferrer">Open standalone ↗</a>
+      </div>
+      <p>Two or three tabular figures with short descriptions.</p>
+      <iframe class="pds-gallery__preview" src="slides/stats.html" title="Stats slide example" loading="lazy"></iframe>
+    </section>
+
+    <section class="pds-gallery__section" aria-labelledby="flow-heading">
+      <div class="pds-gallery__section-head">
+        <h2 id="flow-heading"><a href="slides/flow.html" target="_blank" rel="noreferrer">Flow</a></h2>
+        <a class="pds-gallery__open" href="slides/flow.html" target="_blank" rel="noreferrer">Open standalone ↗</a>
+      </div>
+      <p>Three ordered nodes, a left-to-right path, and one meaningful accent.</p>
+      <iframe class="pds-gallery__preview" src="slides/flow.html" title="Flow slide example" loading="lazy"></iframe>
+    </section>
+
+    <section class="pds-gallery__section" aria-labelledby="chips-heading">
+      <div class="pds-gallery__section-head">
+        <h2 id="chips-heading"><a href="slides/chips.html" target="_blank" rel="noreferrer">Chips</a></h2>
+        <a class="pds-gallery__open" href="slides/chips.html" target="_blank" rel="noreferrer">Open standalone ↗</a>
+      </div>
+      <p>Bordered metadata pills with labels and values.</p>
+      <iframe class="pds-gallery__preview" src="slides/chips.html" title="Chips slide example" loading="lazy"></iframe>
+    </section>
+
+    <section class="pds-gallery__section" aria-labelledby="attributes-heading">
+      <div class="pds-gallery__section-head">
+        <h2 id="attributes-heading"><a href="slides/attributes.html" target="_blank" rel="noreferrer">Attribute list</a></h2>
+        <a class="pds-gallery__open" href="slides/attributes.html" target="_blank" rel="noreferrer">Open standalone ↗</a>
+      </div>
+      <p>Concise definition rows with one key phrase in the accent color.</p>
+      <iframe class="pds-gallery__preview" src="slides/attributes.html" title="Attribute list slide example" loading="lazy"></iframe>
+    </section>
+
+    <section class="pds-gallery__section" aria-labelledby="moment-heading">
+      <div class="pds-gallery__section-head">
+        <h2 id="moment-heading"><a href="slides/moment.html" target="_blank" rel="noreferrer">Moment</a></h2>
+        <a class="pds-gallery__open" href="slides/moment.html" target="_blank" rel="noreferrer">Open standalone ↗</a>
+      </div>
+      <p>A centered question or statement can use the dark surface.</p>
+      <iframe class="pds-gallery__preview" src="slides/moment.html" title="Moment slide example" loading="lazy"></iframe>
+    </section>
+
+    <section class="pds-gallery__section" aria-labelledby="plain-language-heading">
+      <div class="pds-gallery__section-head">
+        <h2 id="plain-language-heading"><a href="slides/plain-language.html" target="_blank" rel="noreferrer">Plain-language line</a></h2>
+        <a class="pds-gallery__open" href="slides/plain-language.html" target="_blank" rel="noreferrer">Open standalone ↗</a>
+      </div>
+      <p>A short explainer helps mixed audiences follow the headline.</p>
+      <iframe class="pds-gallery__preview" src="slides/plain-language.html" title="Plain-language line slide example" loading="lazy"></iframe>
+    </section>
+
+    <section class="pds-gallery__section" aria-labelledby="before-after-heading">
+      <div class="pds-gallery__section-head">
+        <h2 id="before-after-heading"><a href="slides/before-after.html" target="_blank" rel="noreferrer">Before and after</a></h2>
+        <a class="pds-gallery__open" href="slides/before-after.html" target="_blank" rel="noreferrer">Open standalone ↗</a>
+      </div>
+      <p>Show a previous limitation and the result that addresses it.</p>
+      <iframe class="pds-gallery__preview" src="slides/before-after.html" title="Before and after slide example" loading="lazy"></iframe>
+    </section>
+
+    <section class="pds-gallery__section" aria-labelledby="table-heading">
+      <div class="pds-gallery__section-head">
+        <h2 id="table-heading"><a href="slides/table.html" target="_blank" rel="noreferrer">Table</a></h2>
+        <a class="pds-gallery__open" href="slides/table.html" target="_blank" rel="noreferrer">Open standalone ↗</a>
+      </div>
+      <p>Use a few concise rows to compare related details.</p>
+      <iframe class="pds-gallery__preview" src="slides/table.html" title="Table slide example" loading="lazy"></iframe>
+    </section>
+
+    <section class="pds-gallery__section" aria-labelledby="footnote-heading">
+      <div class="pds-gallery__section-head">
+        <h2 id="footnote-heading"><a href="slides/footnote.html" target="_blank" rel="noreferrer">Footnote</a></h2>
+        <a class="pds-gallery__open" href="slides/footnote.html" target="_blank" rel="noreferrer">Open standalone ↗</a>
+      </div>
+      <p>A numbered note adds context or a source detail below the main content.</p>
+      <iframe class="pds-gallery__preview" src="slides/footnote.html" title="Footnote slide example" loading="lazy"></iframe>
+    </section>
+
+    <section class="pds-gallery__section" aria-labelledby="bullet-list-heading">
+      <div class="pds-gallery__section-head">
+        <h2 id="bullet-list-heading"><a href="slides/bullet-list.html" target="_blank" rel="noreferrer">Nested bullet list</a></h2>
+        <a class="pds-gallery__open" href="slides/bullet-list.html" target="_blank" rel="noreferrer">Open standalone ↗</a>
+      </div>
+      <p>A dense example tests hierarchy, varied line lengths, and wrapping.</p>
+      <iframe class="pds-gallery__preview" src="slides/bullet-list.html" title="Nested bullet list slide example" loading="lazy"></iframe>
+    </section>
+
+    <section class="pds-gallery__section" aria-labelledby="media-evidence-heading">
+      <div class="pds-gallery__section-head">
+        <h2 id="media-evidence-heading"><a href="slides/media-evidence.html" target="_blank" rel="noreferrer">Media and evidence</a></h2>
+        <a class="pds-gallery__open" href="slides/media-evidence.html" target="_blank" rel="noreferrer">Open standalone ↗</a>
+      </div>
+      <p>Evidence labels and captions explain what an image shows.</p>
+      <iframe class="pds-gallery__preview" src="slides/media-evidence.html" title="Media and evidence slide example" loading="lazy"></iframe>
+    </section>
+
+    <section class="pds-gallery__section" aria-labelledby="full-bleed-media-heading">
+      <div class="pds-gallery__section-head">
+        <h2 id="full-bleed-media-heading"><a href="slides/full-bleed-media.html" target="_blank" rel="noreferrer">Full-bleed media</a></h2>
+        <a class="pds-gallery__open" href="slides/full-bleed-media.html" target="_blank" rel="noreferrer">Open standalone ↗</a>
+      </div>
+      <p>Replace the labeled placeholder with an image; the scrim only supports caption contrast.</p>
+      <iframe class="pds-gallery__preview" src="slides/full-bleed-media.html" title="Full-bleed media slide example" loading="lazy"></iframe>
+    </section>
+
+    <section class="pds-gallery__section" aria-labelledby="proof-wall-heading">
+      <div class="pds-gallery__section-head">
+        <h2 id="proof-wall-heading"><a href="slides/proof-wall.html" target="_blank" rel="noreferrer">Proof wall</a></h2>
+        <a class="pds-gallery__open" href="slides/proof-wall.html" target="_blank" rel="noreferrer">Open standalone ↗</a>
+      </div>
+      <p>Two to four figures share one row; caption each image.</p>
+      <iframe class="pds-gallery__preview" src="slides/proof-wall.html" title="Proof wall slide example" loading="lazy"></iframe>
+    </section>
+
+    <section class="pds-gallery__section" aria-labelledby="topic-accent-heading">
+      <div class="pds-gallery__section-head">
+        <h2 id="topic-accent-heading"><a href="slides/topic-accent.html" target="_blank" rel="noreferrer">Topic accent</a></h2>
+        <a class="pds-gallery__open" href="slides/topic-accent.html" target="_blank" rel="noreferrer">Open standalone ↗</a>
+      </div>
+      <p>A section hue replaces the default accent consistently.</p>
+      <iframe class="pds-gallery__preview" src="slides/topic-accent.html" title="Topic accent slide example" loading="lazy"></iframe>
+    </section>
+  </main>
+</body>
+</html>

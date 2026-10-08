@@ -1,0 +1,112 @@
+/* Example-only sizing and placement. Reusable slide styles live in css/presentation-system.css. */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #F0F0ED;
+  color: #16181D;
+  font-family: "PDS Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+.pds-example__stage {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.pds-example__stage > .pds-slide {
+  width: min(100vw, 1920px, 177.777778vh);
+}
+
+.pds-example__supporting {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  max-width: 49cqw;
+}
+
+.pds-example__stats {
+  gap: 7.291667cqw;
+}
+
+.pds-example__flow-wrap {
+  position: absolute;
+  top: 49%;
+  right: 0;
+  left: 0;
+}
+
+.pds-example__chip-wrap {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  left: 0;
+}
+
+.pds-example__attrs {
+  width: 54cqw;
+  margin-top: var(--pds-space-6);
+}
+
+.pds-example__plain {
+  top: 48%;
+}
+
+.pds-example__compare {
+  top: 32%;
+  bottom: 10%;
+}
+
+.pds-example__media-copy {
+  margin-top: 2cqw;
+}
+
+.pds-example__summary {
+  top: 72%;
+}
+
+.pds-example__type-heading {
+  margin-top: 5cqw;
+}
+
+.pds-example__type-list {
+  display: grid;
+  gap: 8px;
+  margin: 1.5cqw 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pds-example__type-list li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  border-bottom: 1px solid rgba(22, 24, 29, 0.12);
+  padding-bottom: 8px;
+  font-size: 14px;
+}
+
+.pds-example__type-list span:last-child {
+  color: #66676A;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.pds-example__media-placeholder {
+  background: #D9DBD6;
+}
+
+.pds-example__media-placeholder--part {
+  width: 78%;
+  height: 72%;
+}
+
+.pds-example__media-placeholder--full {
+  background: #39413F;
+}

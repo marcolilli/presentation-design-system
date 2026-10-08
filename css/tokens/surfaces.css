@@ -1,0 +1,18 @@
+:root {
+  --pds-line-color: var(--pds-color-ink);
+  --pds-line-color-faint: rgba(22, 24, 29, 0.22);
+  --pds-border-default: rgba(22, 24, 29, 0.34);
+  --pds-border-subtle: rgba(22, 24, 29, 0.22);
+  --pds-border-chip: rgba(22, 24, 29, 0.16);
+  --pds-shadow: none;
+  --pds-radius-none: 0;
+  --pds-radius-small: 4px;
+  --pds-radius-medium: 8px;
+  --pds-radius-pill: 999px;
+}
+
+.pds-slide {
+  --pds-line-weight: 0.104167cqw;
+  --pds-radius-small-fluid: 0.208333cqw;
+  --pds-radius-medium-fluid: 0.416667cqw;
+}

@@ -1,0 +1,41 @@
+:root {
+  --pds-font-sans: "PDS Inter", "Helvetica Neue", Arial, sans-serif;
+
+  --pds-weight-regular: 400;
+  --pds-weight-medium: 500;
+  --pds-weight-semibold: 600;
+  --pds-weight-bold: 700;
+
+  --pds-leading-tight: 1;
+  --pds-leading-snug: 1.06;
+  --pds-leading-body: 1.4;
+}
+
+/* Fluid values match the 1920 × 1080 reference canvas and scale with it. */
+.pds-slide {
+  --pds-type-wordmark: 12.916667cqw;
+  --pds-type-hero: 15.625cqw;
+  --pds-type-headline: 4.791667cqw;
+  --pds-type-subhead: 3.125cqw;
+  --pds-type-support: 2.291667cqw;
+  --pds-type-caption: 1.458333cqw;
+  --pds-type-stat: 5cqw;
+  --pds-type-flow: 2.708333cqw;
+
+  --pds-track-wordmark: -0.04em;
+  --pds-track-hero: -0.04em;
+  --pds-track-headline: -0.03em;
+  --pds-track-subhead: -0.02em;
+  --pds-track-support: -0.01em;
+  --pds-track-caption: 0;
+  --pds-track-label: 0.18em;
+
+  --pds-accent: var(--pds-color-jade);
+}
+
+.pds-slide.pds-theme--control { --pds-accent: var(--pds-topic-control); }
+.pds-slide.pds-theme--silicon { --pds-accent: var(--pds-topic-silicon); }
+.pds-slide.pds-theme--material { --pds-accent: var(--pds-topic-material); }
+.pds-slide.pds-theme--safety { --pds-accent: var(--pds-topic-safety); }
+.pds-slide.pds-theme--algorithm { --pds-accent: var(--pds-topic-algorithm); }
+.pds-slide.pds-theme--growth { --pds-accent: var(--pds-topic-growth); }
